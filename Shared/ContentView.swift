@@ -32,7 +32,6 @@ struct AddView: View {
     @Environment(\.undoManager) var undoManager
     @ObservedObject var document: RefFileDocTryDocument
     @State private var addition = ""
-    @StateObject var handler: UndoHandler<RefFileDocTryDocument> = UndoHandler()
     
     var body: some View {
         HStack {
@@ -44,21 +43,7 @@ struct AddView: View {
     }
     
     private func addOne() {
-        document.append(addition: addition)
-        handler.registerUndo(from: RefFileDocTryDocument(), to: RefFileDocTryDocument())
+        document.append(addition, undoManager: undoManager)
+        addition = ""
     }
-}
-
-class UndoHandler<Value>: ObservableObject {
-    var binding: Binding<Value>?
-    weak var undoManger: UndoManager?
-    
-    func registerUndo(from oldValue: Value, to newValue: Value) {
-        undoManger?.registerUndo(withTarget: self) { handler in
-            handler.registerUndo(from: newValue, to: oldValue)
-            handler.binding?.wrappedValue = oldValue
-        }
-    }
-    
-    init() {}
 }

@@ -4,6 +4,7 @@
 //
 //  Created by Frederick Kuhl on 7/14/21.
 //
+/// https://developer.apple.com/documentation/swiftui/building_a_document-based_app_with_swiftui
 
 import SwiftUI
 import UniformTypeIdentifiers
@@ -49,7 +50,19 @@ class RefFileDocTryDocument: ReferenceFileDocument {
         return FileWrapper(regularFileWithContents: data)
     }
     
-    func append(addition: String) {
+    //MARK: - Pair of inverse mutators
+    
+    func append(_ addition: String, undoManager: UndoManager? = nil) {
         names.append(addition)
+        undoManager?.registerUndo(withTarget: self) { doc in
+            doc.removeLast(undoManager: undoManager)
+        }
+    }
+    
+    func removeLast(undoManager: UndoManager? = nil) {
+        let last = names.removeLast()
+        undoManager?.registerUndo(withTarget: self) { doc in
+             doc.append(last, undoManager: undoManager)
+        }
     }
 }
