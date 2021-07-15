@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct RefFileDocTryApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: RefFileDocTryDocument()) { file in
-            ContentView(document: file.$document)
+        DocumentGroup(newDocument: RefFileDocTryDocument.init) { file in
+            ContentView(document: file.document)
         }
     }
 }
