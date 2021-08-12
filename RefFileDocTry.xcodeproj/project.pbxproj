@@ -31,6 +31,7 @@
 		278A20A7269F9A2D00267FA0 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		278A20B8269F9B3D00267FA0 /* RefFileDocTry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RefFileDocTry.entitlements; sourceTree = "<group>"; };
 		27C72FC626C416A100468A67 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		27C72FC926C55FEB00468A67 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +71,7 @@
 				278A2095269F9A2B00267FA0 /* RefFileDocTryDocument.swift */,
 				278A2096269F9A2B00267FA0 /* ContentView.swift */,
 				278A2097269F9A2D00267FA0 /* Assets.xcassets */,
+				27C72FC926C55FEB00468A67 /* README.md */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
