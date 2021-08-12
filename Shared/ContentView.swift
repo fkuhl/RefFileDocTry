@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    ///The doc-based app framework sets this.
     @ObservedObject var document: RefFileDocTryDocument
-
+    
     var body: some View {
         List {
             ForEach(document.names, id: \.self) { name in
                 Text(name)
             }
-            AddView(document: document)
+            AddView(/*document: document*/)
         }
         .padding()
         .frame(minWidth: 300, minHeight: 300)
@@ -29,8 +30,9 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct AddView: View {
+    ///The doc-based app framework sets document and undoManager in environment.
     @Environment(\.undoManager) var undoManager
-    @ObservedObject var document: RefFileDocTryDocument
+    @EnvironmentObject var document: RefFileDocTryDocument
     @State private var addition = ""
     
     var body: some View {
