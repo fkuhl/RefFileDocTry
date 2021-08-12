@@ -15,6 +15,10 @@
 		278A20AD269F9A2D00267FA0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278A2096269F9A2B00267FA0 /* ContentView.swift */; };
 		278A20AE269F9A2D00267FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278A2097269F9A2D00267FA0 /* Assets.xcassets */; };
 		278A20AF269F9A2D00267FA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278A2097269F9A2D00267FA0 /* Assets.xcassets */; };
+		27C72FCF26C5649E00468A67 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 27C72FCD26C5649E00468A67 /* README.md */; };
+		27C72FD026C5649E00468A67 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 27C72FCD26C5649E00468A67 /* README.md */; };
+		27C72FD126C5649E00468A67 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C72FCE26C5649E00468A67 /* LICENSE.txt */; };
+		27C72FD226C5649E00468A67 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27C72FCE26C5649E00468A67 /* LICENSE.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,8 @@
 		278A20B8269F9B3D00267FA0 /* RefFileDocTry.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RefFileDocTry.entitlements; sourceTree = "<group>"; };
 		27C72FCB26C562F000468A67 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		27C72FCC26C5634100468A67 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		27C72FCD26C5649E00468A67 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		27C72FCE26C5649E00468A67 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,8 @@
 		278A2093269F9A2B00267FA0 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				27C72FCE26C5649E00468A67 /* LICENSE.txt */,
+				27C72FCD26C5649E00468A67 /* README.md */,
 				278A2094269F9A2B00267FA0 /* RefFileDocTryApp.swift */,
 				278A2095269F9A2B00267FA0 /* RefFileDocTryDocument.swift */,
 				278A2096269F9A2B00267FA0 /* ContentView.swift */,
@@ -178,6 +186,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C72FD126C5649E00468A67 /* LICENSE.txt in Resources */,
+				27C72FCF26C5649E00468A67 /* README.md in Resources */,
 				278A20AE269F9A2D00267FA0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +196,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27C72FD226C5649E00468A67 /* LICENSE.txt in Resources */,
+				27C72FD026C5649E00468A67 /* README.md in Resources */,
 				278A20AF269F9A2D00267FA0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
